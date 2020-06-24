@@ -1,4 +1,4 @@
-<img src="Resources/logo.png" align="center" width="250" height="180">
+<img src="Resources/logo.png" align="center" width="350" height="180">
 
 # Starblock Reborn
 A Re-Imagining of the not-very-good original Starblock. Now written in Godot!

@@ -1,8 +1,4 @@
-
-
-This plugin is now supported in [Godot Extended Library Discord](https://discord.gg/JNrcucg), check out the [Godot Extended Library Project](https://github.com/godot-extended-libraries)!
-
-<img src="Resources/logo.png" align="left" width="64" height="64">
+<img src="Resources/logo.png" align="center" width="250" height="180">
 
 # Starblock Reborn
 A Re-Imagining of the not-very-good original Starblock. Now written in Godot!

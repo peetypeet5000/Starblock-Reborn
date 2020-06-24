@@ -1,0 +1,29 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Resources/ship.png" type="Texture" id=1]
+[ext_resource path="res://Resources/shipl.png" type="Texture" id=2]
+[ext_resource path="res://Resources/shipm.png" type="Texture" id=3]
+[ext_resource path="res://Player.gd" type="Script" id=4]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 3 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "static",
+"speed": 5.0
+} ]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 19.661
+
+[node name="Player" type="Area2D"]
+script = ExtResource( 4 )
+slow_factor = 0.95
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "static"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 2 )
+disabled = true

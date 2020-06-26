@@ -43,3 +43,7 @@ func do_movement(delta: float):
 	position += velocity * delta#delta is time btwn frames, mult so fps does not fuck things up
 	position.x = clamp(position.x, 0, screen_size.x)  #clamp makes sure it says in game window
 	position.y = clamp(position.y, 0, screen_size.y)
+
+
+func _on_Player_body_entered(body):
+	velocity.bounce()
